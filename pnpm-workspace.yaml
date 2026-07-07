@@ -1,0 +1,7 @@
+packages:
+  - '.'
+
+onlyBuiltDependencies:
+  - '@medusajs/telemetry'
+  - '@swc/core'
+  - 'protobufjs'

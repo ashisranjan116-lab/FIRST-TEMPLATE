@@ -56,12 +56,6 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@11.8.0",
-   "pnpm": {
-    "onlyBuiltDependencies": [
-      "@medusajs/telemetry",
-      "@swc/core",
-      "protobufjs"
-    ]
-  }
+  "packageManager": "pnpm@11.8.0"
+   
 }
