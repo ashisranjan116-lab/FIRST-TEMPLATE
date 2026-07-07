@@ -14,9 +14,10 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET,
     }
   },
-  // THIS IS THE NEW PART: It tells Medusa to actually read the Render variable
+  // This absolutely guarantees the admin is disabled on Render
+  // while still keeping it active when you work locally on your computer.
   admin: {
-    disable: process.env.MEDUSA_ADMIN_DISABLED === 'true',
+    disable: process.env.NODE_ENV === 'production',
   },
   modules: [
     {
