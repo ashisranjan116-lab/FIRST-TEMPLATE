@@ -12,6 +12,10 @@ module.exports = defineConfig({
       authCors: process.env.AUTH_CORS!,
       jwtSecret: process.env.JWT_SECRET,
       cookieSecret: process.env.COOKIE_SECRET,
+      // THESE TWO LINES ARE THE FIX:
+      // They force Medusa to use Render's network instead of defaulting to 9000
+      host: process.env.HOST || "0.0.0.0",
+      port: process.env.PORT ? parseInt(process.env.PORT) : 9000,
     }
   },
   // This absolutely guarantees the admin is disabled on Render
