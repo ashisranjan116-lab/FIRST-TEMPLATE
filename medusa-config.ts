@@ -17,7 +17,7 @@ module.exports = defineConfig({
   // This absolutely guarantees the admin is disabled on Render
   // while still keeping it active when you work locally on your computer.
   admin: {
-    disable: process.env.NODE_ENV === 'production',
+    disable: false,
   },
   modules: [
     {
