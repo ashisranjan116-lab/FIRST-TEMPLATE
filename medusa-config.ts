@@ -34,11 +34,11 @@ module.exports = defineConfig({
     },
     // CLOUDINARY CONFIGURATION ADDED BELOW
     {
-      resolve: "@tsc_tech/medusa-plugin-cloudinary/providers/file-cloudinary",
+      resolve: "@medusajs/file",
       options: {
         providers: [
           {
-            resolve: "medusa-file-cloudinary",
+            resolve: "@tsc_tech/medusa-plugin-cloudinary",
             id: "cloudinary",
             options: {
               cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
