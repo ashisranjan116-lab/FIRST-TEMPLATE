@@ -34,7 +34,7 @@ module.exports = defineConfig({
     },
     // CLOUDINARY CONFIGURATION ADDED BELOW
     {
-      resolve: "@medusajs/file",
+      resolve: "@tsc_tech/medusa-plugin-cloudinary/providers/file-cloudinary",
       options: {
         providers: [
           {
